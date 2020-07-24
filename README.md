@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on _24/July/2020_
 
 ### Project Title
-Replace the Project Title
+**INVESTIGATING BIKESHARE PROJECT**
 
 ### Description
-Describe what your project is about and what it does
+In this project, I used Python's jupyter-notebook and pycham IDE to explore data related to bike share systems for three  **Chicago, New York City, and Washington**.This code imports the data and answers interesting questions from the user input  by computing descriptive statistics. This script takes in raw input to create an interactive experience in the terminal to present these statistics.
 
 ### Files used
-Include the files used
+To achieve this I used the Udacity provided .csv Files.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Credits to Udacity lessons
+Udacity mentors.
