@@ -35,7 +35,7 @@ def get_filters():
     print('-'*40)
     return city,month,day
 
-
+# The following function loads data.
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -74,7 +74,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
 
     return df
-
+#The following function loads time statisitics.
 def time_stats(df):
     start_time=time.time()
     print(df['month'].mode()[0])
@@ -82,6 +82,7 @@ def time_stats(df):
     print(df['hour'].mode()[0])
     print('elapsed time is: ',(time.time()-start_time))
 
+#The following function loads station statisitics.
 def Station_stats(df):
     start_time=time.time()
     popular_start_station =df['Start Station'].mode()[0]
@@ -94,7 +95,7 @@ def Station_stats(df):
     print('This took this time: ',(time.time()-start_time))
     print('-'*40)
 
-
+# The following function loads trip statisitics.
 def trip_stats(df):
     start_time=time.time()
     print('Total travel time is ',df['Trip Duration'].sum())
@@ -102,7 +103,7 @@ def trip_stats(df):
     print('This took this time: ',(time.time()-start_time))
     print('-'*40)
 
-
+# The following function loads user stats.
 def User_stats(df,city):
     start_time=time.time()
     print(df['User Type'].value_counts())
@@ -113,7 +114,7 @@ def User_stats(df,city):
         print(df['Birth Year'].min())
     print('\nThis took %s seconds.: ',(time.time()-start_time))
     print('-'*40)
-
+#The following function calls all the functions above
 def main():
     while True:
         city,month,day=get_filters()
