@@ -1,7 +1,6 @@
 import time
 import numpy as np
 import pandas as pd
-import pdb
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -100,7 +99,6 @@ def trip_stats(df):
     print('Mean travel timeis ',df['Trip Duration'].max())
     print('This took this time: ',(time.time()-start_time))
     print('-'*40)
-
 
 def User_stats(df,city):
     start_time=time.time()
