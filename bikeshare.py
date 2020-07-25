@@ -67,7 +67,6 @@ def load_data(city, month, day):
 
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
-
     # filter by day of week if applicable
     if day != 'all':
         # filter by day of week to create the new dataframe
@@ -122,7 +121,11 @@ def main():
         Station_stats(df)
         trip_stats(df)
         User_stats(df,city)
-        print(df.head())
+        five_rows=input('Would you like to see the first five rows')
+        if short_head == 'yes':
+            print(df.head(5))
+        else:
+            print(df.head())
         restart=input(' would you like to try again? ')
         if restart == 'no':
             break
